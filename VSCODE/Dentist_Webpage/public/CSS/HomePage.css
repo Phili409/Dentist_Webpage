@@ -1,0 +1,364 @@
+body {
+    background-color: black;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+.banner h1{
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+.banner img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 30px;
+
+}
+.date-time {
+    color: whitesmoke;
+}
+p {
+    color: aliceblue;
+}
+.intro {
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+.intro h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.button-container {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-container button:hover {
+    background-color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid white;
+    width: 85%;
+    margin-top: 200px;
+}
+footer {
+    color: whitesmoke;
+    font-family: sans-serif;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+.footer-info {
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1100px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-info img {
+    width: 50px;
+    height: 50px;
+}
+.footer-info button {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-info button:hover {
+    background-color: #555;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 300px;
+    }
+    to {
+        margin-top: 100px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 300px;
+    font-family: sans-serif;
+    font-size: 32px;
+    color: whitesmoke;
+    font-weight: bold;
+
+    animation: slideUp 2s forwards;
+}
+
+.underline-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-right: 100px;
+    padding: 5px 0;
+    width: 200px;
+    outline: none;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #555;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    max-height: 70vh; 
+    overflow-y: auto;
+}
+
+.input-pair {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    transition: opacity 0.5s;
+    margin-bottom: 20px; 
+}
+
+.input label {
+    color: whitesmoke; 
+}
+.underline-input {
+    margin-right: 0; 
+}
+
+
+.nextButton {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    
+}
+.nextButton button {
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #555;
+}
+
+.nextButton button:hover {
+    color: #999;
+}
+
+#contactModal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    justify-content: center; 
+    align-items: center;
+    z-index: 1000; 
+}
+
+#contactModal div {
+    background: white; 
+    padding: 20px; 
+    width: 300px;
+    border-radius: 8px; 
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); 
+}
+
+#contactModal textarea {
+    width: 100%; 
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: sans-serif;
+    resize: vertical; 
+}
+
+#contactModal button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+}
+
+#contactModal button:hover {
+    background-color: #555;
+}
+#contactModal h2 {
+    color:#333;
+
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section {
+    display: flex;
+}
+
+.welcome-back-text {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    color:cornflowerblue; 
+    font-size: 24px; 
+    font-family: sans-serif; 
+    animation: slideFromRight 2s forwards; 
+    margin-left: 10px;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: rotate(180deg) translateX(100px);
+    }
+    100% {
+        transform: rotate(180deg) translateX(0);
+    }
+}
+
+.nextButton {
+    margin-top: 20px;
+}
+.invalid-input {
+    border: 2px solid red !important;
+}
+
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.buttons button{
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+    color: #555;
+}
+
+.buttons button:hover {
+    color: #999;
+}
+
+.ThankYou {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+.ThankYou div{
+    font-size: larger;
+    font-family: sans-serif;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.input-pair label {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.underline-input {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 14px;
+    padding: 5px;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+
